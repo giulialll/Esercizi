@@ -1,0 +1,123 @@
+/*----INIZIO CSS CURRICULUM-----------*/
+/*inserito il colore di background, 
+allargato il padding in alto e in basso per avere più spessore,
+allineato il testo al centro*/
+#box1{
+    background-color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*colore del testo presente nel div*/
+.titolo{
+    color:#e6acad;
+    font-size: 1cm;
+}
+
+/*ho inserito display inline-block per bloccare il div nella parte sinistra 
+ senza il display block il colore invade tutto il body */
+#box2{
+    display: inline-block;
+    background-color:#e6acad;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+
+.parag{
+    background-color:black;
+    color:#e6acad;
+    width: fit-content;  
+}
+/*inserito il float right perchè altrimenti si posizionava sotto il div(box2)
+mentre il float right mi permette di averlo sotto il titolo ed accanto al div(box2) */
+#box3{
+    float:right;
+}
+/*qui ho avuto dei problemi con il testo contenuto nei paragrafi perchè essendoci il float right al div
+non mi permette di spostare il testo nel centro */
+.parag1{
+    background-color:black;
+    color:#e6acad;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 985px;
+    
+}
+
+dt{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+/*------FINE CSS CURRICULUM-----------------*/
+
+/*----INIZIO CSS TABELLA------------------ */
+
+#title{
+    text-align: center;
+}
+
+table{  
+  border: 2px solid black;  
+  text-align: left;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+th{
+  padding: 15px;
+  border: 2px solid black;  
+  text-align: left;
+  border-radius: 10px;
+  background-color: red;
+    font-style: italic;
+    font-size: large;
+}
+
+td{
+    padding: 15px;
+    border: 2px solid black;  
+    text-align: left; 
+    border-radius: 4px; 
+}
+
+td:hover{
+    background-color:grey;
+}
+
+/*-----FINE CSS TABELLA----------------*/
+
+/*------INIZIO CSS FORM----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
