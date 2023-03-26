@@ -1,15 +1,18 @@
 /*----INIZIO CSS CURRICULUM-----------*/
-/*inserito il colore di background, 
-allargato il padding in alto e in basso per avere più spessore,
-allineato il testo al centro*/
-#box1{
+/* css è abbastanza espressivo di suo, non servono troppi commenti */
+
+/* generalmente le regole su body si mettono all'inizio */
+body{
+    background-color:whitesmoke;
+}
+
+#name-and-profession {
     background-color:black;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
 
-/*colore del testo presente nel div*/
 .titolo{
     color:#e6acad;
     font-size: 1cm;
@@ -17,35 +20,53 @@ allineato il testo al centro*/
 
 /*ho inserito display inline-block per bloccare il div nella parte sinistra 
  senza il display block il colore invade tutto il body */
-#box2{
+#contacts-and-skills {
     display: inline-block;
     background-color:#e6acad;
+    width: 30%;
+    box-sizing: border-box;
 }
 
-body{
-    background-color:whitesmoke;
-}
-
-
-.parag{
+#contacts-and-skills .label {
     background-color:black;
     color:#e6acad;
     width: fit-content;  
 }
+
+
+/* 
+    Quando applichi float a qualcosa, questa viene rimossa dal normal flow, pur rimanendo all'interno del contenuto.
+    Non si comporta quindi più come un block che prende una riga intera, ma più come un inline-block la cui larghezza 
+    dipende dal suo contenuto. Nel tuo caso la sua larghezza era stabilita dalla riga più lunga del tuo cv (quella con
+    l'elenco delle tecnologie).
+    Per realizzare il layout che volevi raggiungere (no flexbox, no grid) si potrebbe 
+    rendere il box2 con display inline-block (o float left) e con una larghezza stabilita tipo 30% e il box3 con width 70% e float right 
+    (ahime anche il "testo vuoto" tra i due div prende un po' di spazio e quindi senza float il box 3 andrebbe comunque a capo) 
+    e infine applicare box-sizing: border-box ad entrambi in modo che la loro larghezza venga determinata solo dalla proprietà width
+    e non dalla somma di width padding e margin. 
+    A questo punto puoi allineare il testo come vuoi con text-align: center  
+    I float hanno un comportamento difficile da capire e impongono di dichiarare una larghezza specifica, quindi per un layout così la scelta migliore è 
+    o grid o flexbox. Mi azzardo a dire che ormai float è superato, ma prendi questa affermazione con le pinze.
+*/
+
 /*inserito il float right perchè altrimenti si posizionava sotto il div(box2)
 mentre il float right mi permette di averlo sotto il titolo ed accanto al div(box2) */
-#box3{
-    float:right;
+#curriculum {
+    width: 70%;
+    box-sizing: border-box;
+    float: right;
 }
+
 /*qui ho avuto dei problemi con il testo contenuto nei paragrafi perchè essendoci il float right al div
 non mi permette di spostare il testo nel centro */
-.parag1{
+
+#curriculum .label {
+    text-align: center;
     background-color:black;
     color:#e6acad;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 985px;
     
 }
 
