@@ -1,0 +1,153 @@
+.box{
+    background-color:#ff4e5a;
+    color: white;
+    width: 420px;
+    height: 567px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+    
+}
+
+.stile_titolo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2cm;
+    text-align: center;
+}
+
+img{
+    position: relative;
+    left:40px;
+    top:30px;
+    max-height: 578px;
+}
+
+#box1{
+    position: relative;
+    left:40px;
+    bottom:20px;
+}
+
+#icone{
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+#box2{
+    position: relative;
+    right:1041px;
+    top:547px;
+}
+
+.testo-box2{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sottotesto{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.colore-link{
+    font-size: 20px;
+    color:white;
+}
+
+.colore-link:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+#box3{
+    background-color:#f2f2f2;
+    width: 422px;
+    height: 568px;
+    padding-left: 60px;
+    padding-right: 59px;
+    position: absolute;
+    top:597px;
+    left:580px;
+    display: flex;
+    flex-direction:column;
+}
+
+body{
+    display: flex;
+    flex: 30 2 auto;
+    justify-content: flex-start;
+    position: relative;
+    left:180px;
+}
+
+.titolo-box3{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+#prima{
+    position: absolute;
+    top:80px;
+}
+
+#seconda{
+    position: absolute;
+    top:80px;
+    left:400px;
+}
+
+#terza{
+    position: absolute;
+    top:300px;
+}
+
+#quarta{
+    position: absolute;
+    top: 300px;
+    left:400px;
+}
+
+.descrizione-box3{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: red;
+}
+
+#prima-desc{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+
+#seconda-desc{
+    position: absolute;
+    top:50px;
+    left:379px;
+}
+
+#terza-desc{
+    position: absolute;
+    top:280px;
+    left:20px;
+}
+
+#quarta-desc{
+    position: absolute;
+    top:280px;
+    left:379px;
+}
+
+
