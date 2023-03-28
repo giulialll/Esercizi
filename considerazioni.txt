@@ -1,0 +1,45 @@
+Scegli elementi più semantici e nomi di id e classi più legate al
+contenuto del sito per facilitare la lettura del tuo html. Valuta quindi l'uso di
+elementi come ad es.:
+
+main
+article
+section
+h1 - h6
+etc.
+
+per quanto riguarda i nomi delle sezioni del sito puoi usare un id o una classe con un
+buon nome che ne descriva brevemente il contenuto.
+es.
+
+#portrait
+#presentation
+#details
+#stats
+
+
+una volta ottenute queste sezioni sarà facile strutturare il css, che, ahime, è una tecnologia che
+ha poca struttura. Sta a noi organizzare tutto in un unico foglio.
+Ti suggerisco di riordinare il css in modo logico, ad esempio:
+-regole globali
+-componenti riutilizzabili
+-utilities riutilizzabili
+-sezione 1
+-sezione 2
+-sezione 3
+etc.
+
+Come strutturare il css può cambiare di progetto in progetto, ma un'ordine bisogna trovarglielo!
+So che probabilmente hai scelto id e classi solo per poter stilizzare il contenuto, giusto per finire l'esercizio, però, una volta conclusi gli sviluppi, cerca di mettere come punto centrale la leggibilità del codice. 
+Questa regola si può estendere a qualsiasi linguaggio di programmazione, non solo come in questo caso a HTML e CSS.
+
+Ho rifattorizzato un po' il tuo cv cercando di mostrarti questo concetto...
+
+Il sito non è responsive...avendo usato tutte dimensioni assolute su mobile non si legge.
+Rendere un html responsive comporta progettare fin dall'inizio il suo layout con tecnologie come flex o grid.
+Nel tuo caso, hai quattro riquadri. Puoi provare ad usare grid con 2 colonne e un media queri che le riduce ad 1, 
+o flex (wrap) con 4 elementi con flex-basis 50% e una largezza minima impostata.
+Una volta che hai le tue quattro sezioni che reagiscono al cambiamento di larghezza della viewport puoi concentrarti sul contenuto di ognuno e infine 
+su altri aspetti grafici (font, colori etc.), ma il layout è la cosa più importante.
+ 
+Prova ad applicare questi elementi!
