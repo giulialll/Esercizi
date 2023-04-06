@@ -10,12 +10,16 @@ document.body.appendChild(input);
 document.body.appendChild(btn);
 document.body.appendChild(list);
 
-const button = document.createElement('button');
-function aggiungi(label){
+
+function gestisci_task(label){
   const task=document.createElement('li');
   task.textContent =  label;
   list.appendChild(task);
-  list.appendChild(button);
+  const btn_del  = document.createElement('button');
+  btn_del.textContent="elimina";
+  list.appendChild(btn_del);
+  btn_del.addEventListener("click", () => {task.remove();btn_del.remove()});
+  task.addEventListener("dblclick", () => {task.setAttribute("style", "background-color:green;")});
 }
 
 
@@ -29,27 +33,10 @@ btn.addEventListener("click", () => {
     }),
   }).then((res) => {
     if (res.ok) {
-      aggiungi(input.value);
+       gestisci_task(input.value);
     }
   });
 });
-
-
-
-button.addEventListener("doubleclick",() => {
-  fetch("https://jsonplaceholder.typicode.com/todos")
-  .then((res) => res.json())
-  .then((tasks) => {
-    for (const obj of tasks) {
-      task.slice(1,task.lenght-1);
-    }
-  });
-  });
-  
-
- 
-
-
 
 
 
