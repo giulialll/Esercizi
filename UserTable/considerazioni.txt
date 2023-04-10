@@ -1,1 +1,2 @@
 Ci sono alcune duplicazioni che potresti risolvere e alcune funzioni che potresti astrarre per aumentare la leggibilità del codice.
+Le basi comunque ci sono, ma confido sul fatto che tu possa sperimentare di più e andare oltre
