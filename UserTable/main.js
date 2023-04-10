@@ -19,18 +19,11 @@ function genera_tabella(users){
   const tbody = document.createElement('tbody');
   for(const user of users){
     const row_data = document.createElement('tr');
-    const data_1 = document.createElement('td');
-    data_1.textContent = user.name;
-    const data_2 = document.createElement('td');
-    data_2.textContent = user.username;
-    const data_3 = document.createElement('td');
-    data_3.textContent = user.email;
-    const data_4 = document.createElement('td');
-    data_4.textContent = user.phone;
-    row_data.appendChild(data_1);
-    row_data.appendChild(data_2);
-    row_data.appendChild(data_3);
-    row_data.appendChild(data_4);
+    ['name', 'username', 'email', 'phone'].forEach(field => {
+      const td = document.createElement('td');
+      td.textContent = user[field];
+      row_data.appendChild(td);
+    })
     tbody.appendChild(row_data);
   }
   table.appendChild(tbody);
