@@ -8,21 +8,14 @@ function genera_tabella(users){
   const table = document.createElement('table');
   const thead = document.createElement('thead');
   const row = document.createElement('tr');
-  const head_1 = document.createElement('th');
-  head_1.textContent= "Nome";
-  const head_2 = document.createElement('th');
-  head_2.textContent = "Username";
-  const head_3 = document.createElement('th');
-  head_3.textContent = "E-mail";
-  const head_4 = document.createElement('th');
-  head_4.textContent="Phone";
+  ['Nome', 'Username', 'E-mail', 'Phone'].forEach(header => {
+    const th = document.createElement('th');
+    th.textContent= header;
+    row.appendChild(th);
+  })
   document.body.appendChild(table);
   table.appendChild(thead);
   thead.appendChild(row);
-  row.appendChild(head_1);
-  row.appendChild(head_2);
-  row.appendChild(head_3);
-  row.appendChild(head_4);
   const tbody = document.createElement('tbody');
   for(const user of users){
     const row_data = document.createElement('tr');
