@@ -1,0 +1,1 @@
+Ci sono alcune duplicazioni che potresti risolvere e alcune funzioni che potresti astrarre per aumentare la leggibilità del codice.
