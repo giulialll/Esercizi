@@ -15,18 +15,13 @@ aggiungiTask(task: string) {
 }
 
 allCompleted: any [] = [];
-completaTask(id : number){
-  for(let i in this.allTasks){
-    if(this.allTasks[i] === id){
-      this.allCompleted.push(this.allTasks[i]);
-      this.allTasks.splice(this.allTasks.indexOf(id),1)
-    }
-  }
+completaTask(index : number){
+  this.allCompleted.push(this.allTasks[index]);
+  this.allTasks.splice(index,1)
 }
 
-rimuoviTask(id :number){
-  this.allCompleted.splice(this.allTasks.indexOf(id),1);
-  this.allTasks.splice(this.allTasks.indexOf(id),1);
+rimuoviTask(index:number){
+  this.allCompleted.splice(index, 1);
 }
 
 
