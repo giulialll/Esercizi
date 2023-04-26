@@ -15,7 +15,7 @@ aggiungiTask(task: string) {
 }
 
 allCompleted: any [] = [];
-completato(id : number){
+completaTask(id : number){
   for(let i in this.allTasks){
     if(this.allTasks[i] === id){
       this.allCompleted.push(this.allTasks[i]);

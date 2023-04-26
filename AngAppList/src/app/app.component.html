@@ -2,7 +2,7 @@
 <input type="text" name="new" #new>
 <button (click)="aggiungiTask(new.value)">ADD</button>
 <ul>
-  <li *ngFor="let task of allTasks">{{task}}<button (click)="completato(task)">Completato</button></li>
+  <li *ngFor="let task of allTasks">{{task}}<button (click)="completaTask(task)">Completato</button></li>
 </ul>
 <h2>Completati</h2>
 <ul>
