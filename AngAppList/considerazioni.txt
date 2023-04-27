@@ -1,0 +1,20 @@
+Ciao Giulia. Congratulazioni per aver completato il corso!
+
+Ho semplificato leggermente la tua app utilizzando l'index fornito dalla direttiva ngFor.
+
+So che sei più propensa a progredire verso tecnologie back-end, ma non dimenticare che essere un programmatore non è solo conoscere determinati linguaggi,
+ci sono dei valori e delle competenze trasversali, e spero che comunque un minimo sia stato in grado di comunicarteli. 
+Quello che ho visto va bene. I nomi sono ok, il tuo js è ok. Sicuramente potevi fare di più in termini di obiettivi, e andare oltre il minimo indispensabile, per quanto riguarda gli esercizi. 
+
+A parte questo, ricorda sempre di pulire il codice e rifattorizzare prima di fare "git push": 
+ - crea nuovi componenti che rappresentano elementi logici dell'applicazione a cui ti sembra logico dare un nome (es. Todo-list, todo-item).
+ - rimuovi componenti che non sembrano avere più un senso logico, e il cui nome non significa niente.
+ - scomponi le funzioni troppo lunghe e con troppi parametri. Una funzione deve fare una sola cosa...
+ - rinomina funzioni e variabili se pensi che il loro nome può migliorare ed essere più esplicito.
+ - semplifica le logiche con i boolean il più possibile, meno if (e meno if innestati) ci sono, e più il codice è facile da leggere.
+ etc. etc.
+
+Ovviamente non è finita qui. Non si finisce mai di migliorare. 
+Cerca di rendere il codice leggibile, studia nuove tecniche per farlo. Questo è un lavoro di squadra.
+Allarga la tua comprensione della programmazione imparando nuovi linguaggi, nuove tecnologie e nuovi ambiti di sviluppo. 
+Sperimenta in continuazione, anche a costo di sbagliare. C'è sempre git per rimediare agli errori.
